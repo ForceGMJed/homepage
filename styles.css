@@ -1,0 +1,574 @@
+.redColor {
+    background-color: red;
+}
+
+.myborder {
+
+    border: 2px solid green;
+}
+
+.header {
+    background-image: url("./photos/lofi-hk-header.png");
+    background-size: cover;
+}
+
+#topContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
+}
+
+.headerButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.basicInfoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: rgba(228, 147, 25, 0.5) solid;
+    border-width: 0.5rem;
+    border-radius: 1rem;
+
+}
+
+
+.leftInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.rightInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    flex-wrap: nowrap;
+}
+
+.buttonAchor {
+    display: block;
+    width: 100%;
+    flex-shrink: 1;
+    min-width: 0;
+    max-width: 200px;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.topButton {
+    width: 100%;
+    font-size: 17px;
+    background-color: rgba(228, 147, 25, 0.5);
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Courier New;
+    font-weight: bold;
+    padding: 6px 15px;
+
+}
+
+.topButton:hover {
+    background-color: rgba(228, 147, 25, 0.8);
+
+}
+
+.topButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.currentPage {
+    background-color: rgba(228, 147, 25, 1);
+    border-radius: 0.5rem;
+
+}
+
+.contactMeIconsContainer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.contactMe_icons {
+
+    width: 100%;
+    min-width: none;
+    overflow: hidden;
+    max-width: 25px;
+}
+
+.contactMeButton:hover {
+
+    border-radius: 0.5rem;
+    outline: rgba(228, 147, 25, 0.5) solid;
+    outline-width: 0.25rem;
+
+}
+
+.contactMeButton:active {
+    position: relative;
+    top: 1px;
+
+}
+
+
+.selfie {
+    width: 100%;
+}
+
+
+
+
+.steamLink {
+    color: rgb(0, 183, 255);
+}
+
+
+.MiddleContainerFlex {
+    display: flex;
+    size: 100%;
+    justify-content: center;
+
+}
+
+.middleContainerBackground {
+
+    border-top: rgba(228, 147, 25, 0.5) solid;
+    border-bottom: rgba(228, 147, 25, 0.5) solid;
+    border-width: 0.5rem;
+
+    background-image: url("./photos/lofi-hk-body.png");
+    background-size: cover;
+
+}
+
+.middleContent {
+
+    width: 100%;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.7);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-shrink: 1;
+
+}
+
+.middleContent_Home {
+
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-shrink: 1;
+
+}
+
+.dynamicList {
+    width: 100%;
+}
+
+.middleTextHome {
+    width: 100%;
+}
+
+
+.forceFlex {
+    display: flex;
+}
+
+.forceFlexRow {
+    flex-direction: row;
+}
+
+.forceFlexCol {
+    flex-direction: column;
+}
+
+.forceBlock {
+    display: block;
+}
+
+.forceTextWrap {
+
+    overflow-wrap: break-word;
+}
+
+.forceSmallPhoto {
+    max-height: 20px;
+}
+
+.forceglossaryPhoto {
+    max-height: 200px;
+    border-radius: 1rem;
+}
+
+.forceAchPhoto {
+    border-radius: 2rem;
+    min-width: 0;
+    min-height: 0;
+}
+
+.ach_dynamicFlexDirection_middleContent{
+    flex-direction: column;
+
+}
+
+.ach_dynamicFlexDirection_middleContainer{
+    flex-direction: column;
+}
+
+.ach_forceWidth_100{
+    width: 100%;
+}
+
+.ach_forceWidth_side{
+    width: 300px
+
+}
+
+
+
+.NoBottemPadding {
+    padding-bottom: 0rem;
+}
+
+.NoTopPadding {
+    padding-top: 0rem;
+}
+
+.footer {
+
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* utils */
+
+
+.whiteText {
+    color: white;
+}
+
+.textOutline {
+
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+.baseTextFont {
+    font-family: 'Courier New', Courier;
+}
+
+.textnormal {
+    font-weight: normal;
+}
+
+.textThick {
+    font-weight: bold;
+}
+
+.textThicker {
+    font-weight: 900;
+}
+
+.textItalic {
+    font-style: italic;
+}
+
+.evenBiggerFont {
+    font-size: clamp(25px, 5vw, 20px);
+}
+
+.biggerFont {
+    font-size: clamp(20px, 5vw, 25px);
+}
+
+.bigFont {
+    font-size: clamp(15px, 5vw, 20px);
+}
+
+.mediumFont {
+    font-size: clamp(13px, 5vw, 15px);
+}
+
+.smallFont {
+    font-size: clamp(10px, 5vw, 13px);
+}
+
+.evenSmallerFont {
+    font-size: clamp(9px, 5vw, 11px);
+}
+
+.centerThisText {
+    text-align: center;
+}
+.centerContent{
+
+    align-items: center;
+}
+
+
+
+body {
+
+    margin: auto;
+    display: block;
+    align-items: center;
+}
+
+.dynamicFavList {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.favItems {
+    width: 100px;
+
+}
+.name{
+    font-size :25px;
+
+}
+.job{
+    font-size :15px;
+    
+}
+.email{
+
+    font-size :12px;
+}
+
+@media(min-width: 300px) {
+
+    .topButton {
+        font-size: 5px;
+    }
+
+    .dynamicList {
+        width: 20%;
+    }
+
+    .middleTextHome {
+        width: 60%;
+    }
+
+    .favItems {
+        width: 50px;
+    }
+
+    .basicInfoContainer {
+        width: 100%;
+    }
+
+    
+
+
+}
+
+
+@media(min-width: 500px) {
+
+    .topButton {
+        font-size: 10px;
+    }
+
+    .favItems {
+        width: 65px;
+    }
+
+    .name{
+        font-size :27px;
+    
+    }
+    .job{
+        font-size :17px;
+        
+    }
+    .email{
+    
+        font-size :15px;
+    }
+    
+
+}
+
+@media(min-width: 650px) {
+
+    .favItems {
+        width: 100px;
+    }
+
+    .basicInfoContainer {
+        width: 80%;
+    }
+
+    .ach_dynamicFlexDirection_middleContent{
+        flex-direction: column;
+    
+    }
+    
+    .ach_dynamicFlexDirection_middleContainer{
+        flex-direction: column;
+    }
+    
+    .ach_forceWidth_side{
+        width: 400px
+    
+    }
+
+
+}
+
+@media(min-width: 950px) {
+
+    .name{
+        font-size :30px;
+    
+    }
+    .job{
+        font-size :19px;
+        
+    }
+    .email{
+    
+        font-size :17px;
+    }
+}
+
+
+
+@media(min-width: 1000px) {
+    
+    .dynamicFavList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+
+    .favItems {
+        width: 80px;
+    }
+
+
+    .topButton {
+        font-size: 13px;
+    }
+
+    .basicInfoContainer {
+        width: 50%;
+    }
+
+    .ach_dynamicFlexDirection_middleContent{
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+    
+    .ach_dynamicFlexDirection_middleContainer{
+        flex-direction: column;
+    }
+    
+    .ach_forceWidth_side{
+        width: 400px
+    
+    }
+
+}
+
+
+@media(min-width: 1450px) {
+    .dynamicFavList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .topButton {
+        font-size: 20px;
+    }
+
+    .dynamicList {
+        width: 25%;
+    }
+
+    .middleTextHome {
+        width: 50%;
+    }
+
+    .name{
+        font-size :32px;
+    
+    }
+    .job{
+        font-size :20px;
+        
+    }
+    .email{
+    
+        font-size :19px;
+    }
+
+}
+
+@media(min-width: 1700px) {
+    .dynamicFavList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ach_dynamicFlexDirection_middleContent{
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    
+
+    }
+    
+    .ach_dynamicFlexDirection_middleContainer{
+        flex-direction: row;
+    }
+    
+    .ach_forceWidth_side{
+        width: 300px
+    
+    }
+
+
+}
+
+@media(min-width: 1900px) {
+    .dynamicFavList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .name{
+        font-size :34px;
+    
+    }
+    .job{
+        font-size :22px;
+        
+    }
+    .email{
+    
+        font-size :21px;
+    }
+
+}

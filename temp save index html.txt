@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script src = "index.js">
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>StarwarsTrivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+
+                <div id ="MC-1">
+                    <H3>What order did Emperor Palpatine give to commander Cody in Revenge of the Sith?</H3>
+                    <p></p>
+                    <button class="MCButton" name="A" onclick="CheckMCAnswer(event)">Order29</button>
+                    <button class="MCButton" name="B" onclick="CheckMCAnswer(event)">Order37</button>
+                    <button class="MCButton" name="C" onclick="CheckMCAnswer(event)">Order84</button>
+                    <button class="MCButton" name="D" onclick="CheckMCAnswer(event)">Order66</button>
+                </div>
+
+                <div id ="MC-2">
+                    <H3>What planet is the Cloud City on?</H3>
+                    <p></p>
+                    <button class="MCButton" name="A" onclick="CheckMCAnswer(event)">Florrum</button>
+                    <button class="MCButton" name="B" onclick="CheckMCAnswer(event)">Tatooine</button>
+                    <button class="MCButton" name="C" onclick="CheckMCAnswer(event)">Bespin</button>
+                    <button class="MCButton" name="D" onclick="CheckMCAnswer(event)">Christophsis</button>
+                </div>
+
+                <div id ="MC-3">
+                    <H3>Which jedi was the first to inspect the clone army?</H3>
+                    <p></p>
+                    <button class="MCButton" name="A" onclick="CheckMCAnswer(event)">Count Dooku</button>
+                    <button class="MCButton" name="B" onclick="CheckMCAnswer(event)">Qui-Gon Jinn</button>
+                    <button class="MCButton" name="C" onclick="CheckMCAnswer(event)">Obiwan Kenobi</button>
+                    <button class="MCButton" name="D" onclick="CheckMCAnswer(event)">Sifo Dyas</button>
+                </div>
+
+
+                <div id ="MC-4">
+                    <H3>How many seasons of The Clone wars (2008) are there?</H3>
+                    <p></p>
+                    <button class="MCButton" name="A" onclick="CheckMCAnswer(event)">4</button>
+                    <button class="MCButton" name="B" onclick="CheckMCAnswer(event)">5</button>
+                    <button class="MCButton" name="C" onclick="CheckMCAnswer(event)">7</button>
+                    <button class="MCButton" name="D" onclick="CheckMCAnswer(event)">8</button>
+                </div>
+
+            </div>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>When you submit the form, a function is triggered which alerts some text.</p>
+
+
+    <div class="section">
+        <h2>Part 2: Free Response</h2>
+        <hr>
+        <!-- TODO: Add free response question here -->
+        <form action="/action_page.php" id="LQ-1" onsubmit="CheckLQAnswer(event)">
+            <H3>How many seasons of The Clone wars (2008) are there?</H3>
+            <p></p>
+            <input name ="inputField" type="text">
+            <input type="Submit">
+        </form>
+
+    </div>
+
+
+<script>
+LQAns=["asd"];
+
+function CheckLQAnswer(event) 
+{
+    var parent = event.target;
+    var childList =parent.children;
+    var userAnswer;
+
+
+   alert(event.target.tagName);
+   
+   alert(parent.childElementCount);
+   
+   
+   var questionNumber = parent.id.substring(3);
+   var arryIndex = parseInt(questionNumber) - ;
+   
+   alert("questionNumber= " + questionNumber);
+   
+   for(var i=0; i<childList.length; i++)
+   {
+   		var item = childList.item(i);
+        
+        if(item.tagName != "INPUT")
+        {continue;}
+        
+        if(item.name = "inputField")
+        {
+        	userAnswer = item.value;
+            alert(userAnswer);
+        }
+   }
+   
+	
+    if(userAnswer == LQAns
+    
+
+
+}
+
+function UpdatePara(parentHtml,b)
+{
+	parentHtml.querySelector("p") = b? "Correct":"Wrong!";
+}
+</script>
+
+</body>
+</html>
