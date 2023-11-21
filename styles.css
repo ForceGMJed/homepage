@@ -69,14 +69,14 @@
 
 .topButton {
     width: 100%;
-    font-size: 17px;
+    font-size: 10px;
     background-color: rgba(228, 147, 25, 0.5);
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
     font-family: Courier New;
     font-weight: bold;
-    padding: 6px 15px;
+    padding: 5px 0px;
 
 }
 
@@ -361,7 +361,7 @@ body {
 @media(min-width: 300px) {
 
     .topButton {
-        font-size: 5px;
+        font-size: 12px;
     }
 
     .dynamicList {
@@ -389,7 +389,7 @@ body {
 @media(min-width: 500px) {
 
     .topButton {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .favItems {
@@ -470,7 +470,7 @@ body {
 
 
     .topButton {
-        font-size: 13px;
+        font-size: 17px;
     }
 
     .basicInfoContainer {
