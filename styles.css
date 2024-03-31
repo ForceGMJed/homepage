@@ -8,7 +8,7 @@
 }
 
 .header {
-    background-image: url("./photos/lofi-hk-header.png");
+    background-image: url("./photos/lofi-hk-header-2.png");
     background-size: cover;
 }
 
@@ -152,7 +152,7 @@
     border-bottom: rgba(228, 147, 25, 0.5) solid;
     border-width: 0.5rem;
 
-    background-image: url("./photos/lofi-hk-body.png");
+    background-image: url("./photos/lofi-hk-body-2.png");
     background-size: cover;
 
 }
@@ -256,6 +256,7 @@
 
     width: 100%;
     height: auto;
+
 }
 
 
@@ -414,8 +415,13 @@ body {
 
 @media(min-width: 650px) {
 
+    .dynamicFavList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+
     .favItems {
-        width: 100px;
+        width: 65px;
     }
 
     .basicInfoContainer {
@@ -441,6 +447,11 @@ body {
 
 @media(min-width: 950px) {
 
+    .dynamicFavList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    
     .name{
         font-size :30px;
     
@@ -452,6 +463,14 @@ body {
     .email{
     
         font-size :17px;
+    }
+
+    .dynamicList {
+        width: 25%;
+    }
+
+    .middleTextHome {
+        width: 50%;
     }
 }
 
