@@ -35,7 +35,7 @@
     width: 50%;
     padding: 1rem;
     background: rgba(255, 255, 255, 0.8);
-    border: rgba(228, 147, 25, 0.5) solid;
+    border-color: rgba(228, 147, 25, 0.5) solid;
     border-width: 0.5rem;
     border-radius: 1rem;
 
@@ -82,6 +82,7 @@
 
 .topButton:hover {
     background-color: rgba(228, 147, 25, 0.8);
+    border-color:  rgba(228, 147, 25, 0.5) solid;
 
 }
 
@@ -168,7 +169,7 @@
 
 }
 
-.middleContent_Home {
+/* .middleContent_Home {
 
     justify-content: center;
     align-items: center;
@@ -177,7 +178,7 @@
     padding-bottom: 2rem;
     flex-shrink: 1;
 
-}
+} */
 
 .dynamicList {
     width: 100%;
