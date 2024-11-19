@@ -70,7 +70,7 @@
 .topButton {
     width: 100%;
     font-size: 10px;
-    background-color: rgba(255, 255, 255,0);
+    background-color: rgba(255, 255, 255,0.2);
     display: inline-block;
     cursor: pointer;
     color: #fceaea;
